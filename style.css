@@ -1,0 +1,150 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  color: white;
+  line-height: 1.5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  padding: var(--spacing-sm) var(--spacing-md); /* .btn과 동일 */
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-lg);
+  font-family: inherit;
+  margin-bottom: 0.5rem;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+ul {
+  width: 300px;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: var(--radius-md);
+  margin-bottom: 0.5rem;
+  color: white;
+  font-weight: 300;
+  font-size: var(--font-size-lg);
+}
+
+/* VARIABLES */
+:root {
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 48px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radiux-lg: 16px;
+}
+
+/* LAYOUT */
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* COMPONENTS */
+.text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+  -webkit-text-stroke: 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.btn {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+}
+
+#clock {
+  font-size: 6rem;
+  font-weight: 700;
+  -webkit-text-stroke: 4px rgba(0, 0, 0, 0.3);
+}
+
+#greeting {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#input-todo {
+  text-align: center;
+}
+
+#btn-todo {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  padding: var(--spacing-xs);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: var(--font-size-md);
+}
+
+#random-quote {
+  position: fixed;
+  bottom: 2rem;
+  text-align: center;
+}
+
+#credit {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* UTILITIES */
+.hidden {
+  display: none;
+}
